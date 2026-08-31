@@ -35,4 +35,5 @@ Aggregated across all projects in this portfolio — updated as new projects are
 
 ## Contact
 
-tomer9tomer@gmail.com
+- 📧 tomer9tomer@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/tomer-levin-970874336/)
