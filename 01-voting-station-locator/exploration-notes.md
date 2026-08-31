@@ -86,6 +86,14 @@ value hardcoded once? If hardcoded, it will quietly become wrong in future
 years (blocking real 121+-year-old users). Cannot verify from the UI alone —
 would need to re-check in a year, or inspect source/ask.
 
+Real-world check: the oldest living person in Israel as of this writing is
+Tzila Cohen, born 20/11/1914 (~110–111) — comfortably within the current
+1906 cutoff (~8 years of margin). So this is **not an active bug today**, but
+with rising life expectancy the margin will keep shrinking — worth
+monitoring over time, especially if the value turns out to be hardcoded
+rather than dynamic.
+Source: https://www.ice.co.il/local-news/news/article/1088466
+
 ### Positive finding, flagged inconsistency — inline validation only on ID field
 The ID field validates format inline (red border + message) seemingly on
 blur/type, before submission. The date fields have no equivalent inline
