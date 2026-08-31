@@ -1,4 +1,4 @@
-# QA Portfolio — Tomer Levy
+# QA Portfolio — Tomer Levin
 
 Manual QA testing portfolio, built to demonstrate practical, industry-standard
 testing skills for an entry-level QA role.
@@ -31,5 +31,5 @@ Clear technical documentation
 
 ## About
 
-Built by Tomer Levy as part of a job search for a first QA position.
+Built by Tomer Levin as part of a job search for a first QA position.
 Contact: tomer9tomer@gmail.com
