@@ -72,12 +72,12 @@ dependencies, independent of the rest of the portfolio. Requires Python
 
 Successful login — the app under test:
 
-![Welcome screen after a successful login](evidence/welcome-screen.jpeg)
+<img src="evidence/welcome-screen.jpeg" width="700" alt="Welcome screen after a successful login">
 
 Full passing run (all 8 test cases):
 
-![Passing run, part 1](evidence/passing-run-1.jpeg)
-![Passing run, part 2](evidence/passing-run-2.jpeg)
+<img src="evidence/passing-run-1.jpeg" width="700" alt="Passing run, part 1">
+<img src="evidence/passing-run-2.jpeg" width="700" alt="Passing run, part 2">
 
 ## Future improvements
 
