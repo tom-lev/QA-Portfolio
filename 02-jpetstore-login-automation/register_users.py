@@ -1,5 +1,4 @@
 import os
-import time
 
 from dotenv import load_dotenv
 from selenium import webdriver
@@ -44,5 +43,6 @@ for username, password, firstname in users:
     button = wait.until(EC.element_to_be_clickable((By.NAME, "newAccount")))
     button.click()
 
-    time.sleep(5)
+    # wait for the post-registration welcome page instead of a fixed sleep
+    wait.until(EC.visibility_of_element_located((By.ID, "WelcomeContent")))
 driver.quit()

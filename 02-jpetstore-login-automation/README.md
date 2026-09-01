@@ -41,3 +41,8 @@ the public JPetStore demo site: https://petstore.octoperf.com/
 
 TODO: run the suite and save a console output / screenshot of a full passing
 run into `evidence/`.
+
+## Future improvements
+
+- Convert the runner from a hand-rolled script (prints + try/except) to
+  pytest, for real test discovery, fixtures, and standard reporting.
