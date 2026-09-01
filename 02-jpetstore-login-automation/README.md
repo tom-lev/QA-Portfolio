@@ -41,7 +41,8 @@ Requirements:
 ## Setup
 
 This project is self-contained — its own virtual environment and
-dependencies, independent of the rest of the portfolio.
+dependencies, independent of the rest of the portfolio. Requires Python
+3.10+ (developed and tested with 3.14).
 
 1. From inside this folder, create and activate a virtual environment:
    ```powershell
@@ -69,8 +70,10 @@ dependencies, independent of the rest of the portfolio.
 
 ## Evidence
 
-See `evidence/passing-run-1.jpeg` and `evidence/passing-run-2.jpeg` for a
-full passing run (all 8 test cases).
+Full passing run (all 8 test cases):
+
+![Passing run, part 1](evidence/passing-run-1.jpeg)
+![Passing run, part 2](evidence/passing-run-2.jpeg)
 
 ## Future improvements
 
