@@ -9,8 +9,11 @@ the public JPetStore demo site: https://petstore.octoperf.com/
 - `scripts/login_scripts.py` — login test scenarios (valid/invalid login)
 - `data/login_case.py` — test data container
 - `main.py` — test runner
-- `register_users.py` — one-time setup script to register the demo users
-  used by the tests
+- `register_users.py` — setup script to register the demo users used by the
+  tests. The demo site periodically wipes its registered users, so this
+  script may need to be re-run occasionally — check that the login tests in
+  `main.py` still pass first; if the valid-login cases start failing, re-run
+  `register_users.py` to recreate the accounts
 
 ## Coverage
 
