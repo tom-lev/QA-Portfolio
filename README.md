@@ -19,7 +19,7 @@ skills on real, publicly available systems.
 | # | Project | Description | System Under Test | Status |
 |---|---------|--------------|--------------------|--------|
 | 01 | [Voting Station Locator](01-voting-station-locator/) | Full manual test cycle on a government voting-station lookup tool | [gov.il — Voting Station Locator](https://www.gov.il/apps/moin/bocharim/) | In progress |
-| 02 | [JPetStore Login Automation](02-jpetstore-login-automation/) | Selenium (POM) automation suite for a login flow | [JPetStore demo](https://petstore.octoperf.com/) | In progress |
+| 02 | [JPetStore Login Automation](02-jpetstore-login-automation/) | Selenium (POM) automation suite for a login flow | [JPetStore demo](https://petstore.octoperf.com/) | Complete |
 
 ## Skills demonstrated
 
