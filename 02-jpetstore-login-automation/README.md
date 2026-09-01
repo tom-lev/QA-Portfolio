@@ -70,6 +70,10 @@ dependencies, independent of the rest of the portfolio. Requires Python
 
 ## Evidence
 
+Successful login — the app under test:
+
+![Welcome screen after a successful login](evidence/welcome-screen.jpeg)
+
 Full passing run (all 8 test cases):
 
 ![Passing run, part 1](evidence/passing-run-1.jpeg)
