@@ -1,7 +1,7 @@
 # JPetStore Login Automation
 
 Selenium automation project (Page Object Model) covering the login flow of
-the public JPetStore demo site: https://petstore.octoperf.com/
+the public JPetStore demo site: [https://petstore.octoperf.com/](https://petstore.octoperf.com/actions/Catalog.action)
 
 ## Assignment brief
 
