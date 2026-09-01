@@ -3,3 +3,8 @@ TODO.md
 # OS files
 .DS_Store
 Thumbs.db
+
+# Shared Python virtual environment (root-level, used by all projects)
+venv/
+__pycache__/
+*.py[cod]

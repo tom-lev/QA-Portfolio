@@ -22,17 +22,20 @@ the public JPetStore demo site: https://petstore.octoperf.com/
 
 ## Setup
 
-1. `pip install -r requirements.txt`
-2. Copy `.env.example` to `.env` and fill in real values — either register
-   your own demo users at petstore.octoperf.com (see `register_users.py`) or
-   use existing ones:
+This project uses the shared virtual environment and `requirements.txt` at
+the repo root (`QA-Portfolio/venv`, `QA-Portfolio/requirements.txt`) — see
+the root README for setup. Once the environment is active:
+
+1. Copy `.env.example` to `.env` (inside this folder) and fill in real
+   values — either register your own demo users at petstore.octoperf.com
+   (see `register_users.py`) or use existing ones:
    ```
    TOMER_USERNAME=...
    TOMER_PASSWORD=...
    TOMER2_USERNAME=...
    TOMER2_PASSWORD=...
    ```
-3. Run:
+2. Run (from inside this folder):
    ```
    python main.py
    ```
