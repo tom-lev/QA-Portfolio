@@ -69,8 +69,8 @@ dependencies, independent of the rest of the portfolio.
 
 ## Evidence
 
-TODO: run the suite and save a console output / screenshot of a full passing
-run into `evidence/`.
+See `evidence/passing-run-1.jpeg` and `evidence/passing-run-2.jpeg` for a
+full passing run (all 8 test cases).
 
 ## Future improvements
 
