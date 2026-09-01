@@ -1,5 +1,7 @@
 # Traceability Matrix — Voting Station Locator
 
+Full working sheet (source of truth): [Google Sheets](https://docs.google.com/spreadsheets/d/1N10lbNpYWRBuHuPAgquC69JrYWB3VnxMGj2IGlV-TFM/edit?usp=sharing)
+
 ## Requirement 1 — הזנת פרטים
 
 ### 1.1 — הזנת תעודת זהות
