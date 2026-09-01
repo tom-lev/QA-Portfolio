@@ -38,7 +38,6 @@ def main():
         LoginCase("Valid user, wrong password", os.getenv("TOMER_USERNAME"), "wrongpassword"),
         LoginCase("Invalid user, Invalid password", "wronguser", "wrongpassword"),
         LoginCase("Invalid user, Invalid password", "baduser", "badpassword"),
-        LoginCase("Empty username, empty password", "", ""),
     ]
 
     try:

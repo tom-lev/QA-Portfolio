@@ -3,6 +3,33 @@
 Selenium automation project (Page Object Model) covering the login flow of
 the public JPetStore demo site: https://petstore.octoperf.com/
 
+## Assignment brief
+
+This project started as a course assignment: plan, write, and run automated
+Selenium/Python test scripts for a JPetStore login flow, covering:
+
+| # | Test case | Expected result |
+|---|---|---|
+| 1 | Login — invalid username, valid password | Error message |
+| 2 | Login — valid username, invalid password | Error message |
+| 3 | Login — invalid username, invalid password | Error message |
+| 4 | Login — valid username, valid password | "Welcome" message on the home screen |
+
+Required beyond the 4 cases themselves:
+- Every scenario runs at least twice, with different test data (2
+  manually-registered demo users), and passes
+- Condition-based synchronization waits (5s default) wherever needed — no
+  hardcoded `sleep`
+- Generic, data-driven scripts — not one hardcoded script per case
+- Page Object Model — page classes, test scripts, and test data kept in
+  separate modules
+- Step-by-step logging: which step ran, the expected result, pass/fail
+- Clear code — meaningful function/class names, comments in the code
+
+These requirements line up closely with real industry expectations for a
+junior automation QA role — which is exactly why this fits a portfolio, not
+just a course grade.
+
 ## Structure
 
 - `pages/` — Page Object classes (`BasePage`, `LoginPage`, `HomePage`)
@@ -21,7 +48,6 @@ the public JPetStore demo site: https://petstore.octoperf.com/
 - Invalid username, valid password
 - Valid username, invalid password
 - Invalid username, invalid password
-- Empty username and password
 
 ## Setup
 

@@ -1,9 +1,12 @@
+import os
+
 from pages.login_page import LoginPage
 from pages.home_page import HomePage
 from selenium.common.exceptions import TimeoutException
 
 # the error message we expect for every failed login
 ERROR_MESSAGE = "Invalid username or password. Signon failed."
+EVIDENCE_DIR = "evidence"
 
 class LoginScripts:
     """Login test scenarios"""
@@ -22,6 +25,13 @@ class LoginScripts:
         self.__login_page.enter_password(password)
         self.__login_page.click_login_button()
 
+    # save a screenshot of the current page state on failure, for evidence/debugging
+    def _screenshot(self, reason):
+        os.makedirs(EVIDENCE_DIR, exist_ok=True)
+        path = os.path.join(EVIDENCE_DIR, f"failure_test{self.__test_num}_{reason}.png")
+        self.__driver.save_screenshot(path)
+        print(f"  (screenshot saved: {path})")
+
     def login_expect_success(self, description, username, password, expected):
         self.__test_num += 1
         print(f"TEST {self.__test_num}: valid login - {description} | expected = '{expected}'")
@@ -37,8 +47,10 @@ class LoginScripts:
             print(f"Passed - got '{actual_message}'")
         except AssertionError:
             print(f"FAILED (wrong text) - expected '{expected}', got '{actual_message}'")
+            self._screenshot("wrong_text")
         except TimeoutException:
             print(f"FAILED (timeout) - a step timed out, see the last STEP above")
+            self._screenshot("timeout")
         print()
 
         # a successful login leaves a cookie; clear it so the next test starts logged out
@@ -59,6 +71,8 @@ class LoginScripts:
             print(f"Passed - got '{actual_message}'")
         except AssertionError:
             print(f"FAILED (wrong text) - expected '{ERROR_MESSAGE}', got '{actual_message}'")
+            self._screenshot("wrong_text")
         except TimeoutException:
             print(f"FAILED (timeout) - a step timed out, see the last STEP above")
+            self._screenshot("timeout")
         print()
