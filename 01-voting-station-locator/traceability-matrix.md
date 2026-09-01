@@ -1,4 +1,4 @@
-# Functional Decomposition — Voting Station Locator
+# Traceability Matrix — Voting Station Locator
 
 <table dir="rtl">
 <tr>

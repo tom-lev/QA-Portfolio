@@ -13,7 +13,7 @@ _TBD — short summary of what was tested and key results._
 | Artifact | Description |
 |---|---|
 | [STP.md](STP.md) | Software Test Plan — scope, approach, environments, entry/exit criteria |
-| [functional-decomposition.md](functional-decomposition.md) | Breakdown of the system into features and sub-functions |
+| [traceability-matrix.md](traceability-matrix.md) | Requirements → test conditions → test cases, mapped end to end |
 | [test-cases.md](test-cases.md) | Test cases — positive, negative, and edge-case scenarios |
 | [bug-reports/](bug-reports/) | Bugs found during execution, one file per bug |
 | [STR.md](STR.md) | Software Test Report — execution results and conclusions |

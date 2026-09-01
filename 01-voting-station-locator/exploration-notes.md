@@ -1,7 +1,7 @@
 # Exploration Notes — Voting Station Locator
 
 Working notes from initial exploratory testing. To be used as input for
-`functional-decomposition.md`, `STP.md`, `test-cases.md`, and `bug-reports/`.
+`traceability-matrix.md`, `STP.md`, `test-cases.md`, and `bug-reports/`.
 Not a final deliverable — raw findings only.
 
 ## System basics
@@ -16,7 +16,7 @@ Not a final deliverable — raw findings only.
 - Voter roll snapshot date shown: 31/05/2026, with a link "לסיבות אי הכללות
   בפנקס" (reasons for exclusion from the voter roll) — not yet explored.
 
-## Functional scope observed so far (for functional-decomposition.md)
+## Functional scope observed so far (for traceability-matrix.md)
 
 - Voter eligibility check (combined with polling station lookup — not two
   separate features)
