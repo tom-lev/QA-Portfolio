@@ -3,10 +3,10 @@
 Selenium automation project (Page Object Model) covering the login flow of
 the public JPetStore demo site: https://petstore.octoperf.com/
 
-## Assignment brief
+## Scope
 
-This project started as a course assignment: plan, write, and run automated
-Selenium/Python test scripts for a JPetStore login flow, covering:
+Plan, write, and run an automated Selenium/Python test suite for the
+JPetStore login flow, covering:
 
 | # | Test case | Expected result |
 |---|---|---|
@@ -15,7 +15,7 @@ Selenium/Python test scripts for a JPetStore login flow, covering:
 | 3 | Login — invalid username, invalid password | Error message |
 | 4 | Login — valid username, valid password | "Welcome" message on the home screen |
 
-Required beyond the 4 cases themselves:
+Requirements:
 - Every scenario runs at least twice, with different test data (2
   manually-registered demo users), and passes
 - Condition-based synchronization waits (5s default) wherever needed — no
@@ -25,10 +25,6 @@ Required beyond the 4 cases themselves:
   separate modules
 - Step-by-step logging: which step ran, the expected result, pass/fail
 - Clear code — meaningful function/class names, comments in the code
-
-These requirements line up closely with real industry expectations for a
-junior automation QA role — which is exactly why this fits a portfolio, not
-just a course grade.
 
 ## Structure
 
@@ -41,13 +37,6 @@ just a course grade.
   script may need to be re-run occasionally — check that the login tests in
   `main.py` still pass first; if the valid-login cases start failing, re-run
   `register_users.py` to recreate the accounts
-
-## Coverage
-
-- Valid login (per registered demo user)
-- Invalid username, valid password
-- Valid username, invalid password
-- Invalid username, invalid password
 
 ## Setup
 
