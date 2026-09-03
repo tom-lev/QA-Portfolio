@@ -11,7 +11,7 @@ _TBD_
   (ISTQB / ISO 25010 quality characteristic), in scope for this project but
   **not** modeled in the functional traceability matrix (Requirement → Test
   Condition → Test Case). Tracked separately (test cases + results live
-  outside that matrix, e.g. in `test-script.md` / `STR.md`).
+  outside that matrix, e.g. in `test-scripts.md` / `STR.md`).
 - Accessibility / keyboard navigation — non-functional (Usability/
   Accessibility, ISO 25010), same treatment as Compatibility above: in scope
   for this project, not part of the functional traceability matrix, test

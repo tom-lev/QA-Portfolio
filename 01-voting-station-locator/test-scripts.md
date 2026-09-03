@@ -1,4 +1,4 @@
-# Test Script — Voting Station Locator
+# Test Scripts — Voting Station Locator
 
 Detailed step-by-step scripts for the test cases defined in the
 [traceability matrix](https://docs.google.com/spreadsheets/d/1N10lbNpYWRBuHuPAgquC69JrYWB3VnxMGj2IGlV-TFM/edit?usp=sharing)
