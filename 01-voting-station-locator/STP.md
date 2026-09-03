@@ -12,6 +12,10 @@ _TBD_
   **not** modeled in the functional traceability matrix (Requirement → Test
   Condition → Test Case). Tracked separately (test cases + results live
   outside that matrix, e.g. in `test-cases.md` / `STR.md`).
+- Accessibility / keyboard navigation — non-functional (Usability/
+  Accessibility, ISO 25010), same treatment as Compatibility above: in scope
+  for this project, not part of the functional traceability matrix, test
+  cases + results tracked separately. Planning and execution still to come.
 
 ### Out of Scope
 - **Network reliability / fault injection** (slow or dropped connection during
