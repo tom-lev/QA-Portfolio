@@ -7,6 +7,11 @@ _TBD_
 ## 2. Scope
 ### In Scope
 - Functional testing (field validation, form submission, result display)
+- Compatibility testing (cross-browser / cross-device) — non-functional
+  (ISTQB / ISO 25010 quality characteristic), in scope for this project but
+  **not** modeled in the functional traceability matrix (Requirement → Test
+  Condition → Test Case). Tracked separately (test cases + results live
+  outside that matrix, e.g. in `test-cases.md` / `STR.md`).
 
 ### Out of Scope
 - **Network reliability / fault injection** (slow or dropped connection during
