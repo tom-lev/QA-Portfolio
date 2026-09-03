@@ -2,7 +2,7 @@
 
 Working notes from initial exploratory testing. To be used as input for
 the traceability matrix (Google Sheets), `STP.md`, `test-scripts.md`, and
-`bug-reports/`.
+`bug-reports.md`.
 Not a final deliverable — raw findings only.
 
 ## System basics
