@@ -15,6 +15,7 @@ _TBD — short summary of what was tested and key results._
 | [STP.md](STP.md) | Software Test Plan — scope, approach, environments, entry/exit criteria |
 | [Traceability Matrix](https://docs.google.com/spreadsheets/d/1N10lbNpYWRBuHuPAgquC69JrYWB3VnxMGj2IGlV-TFM/edit?usp=sharing) | Requirements → test conditions → test cases, mapped end to end (Google Sheets) |
 | [test-cases.md](test-cases.md) | Test cases — positive, negative, and edge-case scenarios |
+| [run-report.md](run-report.md) | Execution log per test round (date, environment, Pass/Fail/Blocked counts) |
 | [bug-reports/](bug-reports/) | Bugs found during execution, one file per bug |
 | [STR.md](STR.md) | Software Test Report — execution results and conclusions |
 | [evidence/](evidence/) | Screenshots supporting test cases and bug reports |
