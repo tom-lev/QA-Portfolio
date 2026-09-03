@@ -1,7 +1,7 @@
 # Exploration Notes — Voting Station Locator
 
 Working notes from initial exploratory testing. To be used as input for
-the traceability matrix (Google Sheets), `STP.md`, `test-cases.md`, and
+the traceability matrix (Google Sheets), `STP.md`, `test-script.md`, and
 `bug-reports/`.
 Not a final deliverable — raw findings only.
 
