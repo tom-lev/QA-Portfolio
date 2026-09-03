@@ -1,8 +1,9 @@
 # Run Report — Voting Station Locator
 
-Execution log per round — distinct from `STR.md` (the final summary report).
-Each row is one test run session, not one test case.
+Execution log — one row per test case per run. Distinct from `STR.md` (the
+final summary report) and from `test-cases.md`/the traceability matrix
+(planned test design, not execution history).
 
-| Round | Date | Environment | Run by | TCs run | Pass | Fail | Blocked |
-|---|---|---|---|---|---|---|---|
-| | | | | | | | |
+| TC # | Description | Preconditions | Test Data | Steps | Expected Result | Actual Result | Status | Bug ID | Environment | Tester | Date |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | | | |
