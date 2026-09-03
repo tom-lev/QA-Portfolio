@@ -16,6 +16,15 @@ _TBD_
   Accessibility, ISO 25010), same treatment as Compatibility above: in scope
   for this project, not part of the functional traceability matrix, test
   cases + results tracked separately. Planning and execution still to come.
+- Security (basic) — non-functional (Security, ISO 25010), same treatment as
+  above: input sanitization / injection attempts (e.g. script tags in the ID
+  field), basic transport checks (HTTPS enforced). Not part of the
+  functional traceability matrix. Planning and execution still to come.
+- UI/UX (general) — non-functional (Usability), same treatment as above.
+  Covers things like on-page navigation/links working correctly (e.g. the
+  "reasons for exclusion from the voter roll" link and its own links) —
+  checked as part of a general UI/UX pass, not modeled as its own functional
+  requirement. Planning and execution still to come.
 
 ### Out of Scope
 - **Network reliability / fault injection** (slow or dropped connection during
@@ -39,6 +48,8 @@ _TBD_
   requires the tester's own real ID number and date of birth. These real
   values are never recorded in this repo (code, docs, or screenshots) — only
   the test result is documented. All other test cases use fictitious,
-  checksum-valid ID numbers that do not belong to real people.
+  checksum-valid ID numbers that do not belong to real people. See
+  `exploration-notes.md` for the Israeli ID checksum algorithm used to
+  generate these fictitious values.
 
 ## 9. Schedule
