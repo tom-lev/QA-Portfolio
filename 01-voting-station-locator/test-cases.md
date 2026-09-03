@@ -2,6 +2,6 @@
 
 _TBD_
 
-| ID | Title | Preconditions | Steps | Expected Result | Actual Result | Status | Severity |
-|---|---|---|---|---|---|---|---|
-| TC-001 | | | | | | | |
+| ID | Title | Preconditions | Steps | Expected Result | Actual Result |
+|---|---|---|---|---|---|
+| TC-001 | | | | | |
