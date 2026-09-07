@@ -82,7 +82,7 @@ traceability matrix - they're tracked separately (test cases + results live in `
 | Test type | Reason |
 |---|---|
 | Performance / Load | The SUT is a live production government system not owned by the tester - there is no authorization or safe way to generate artificial load against it. |
-| API | No documented or accessible public API; the Angular SPA's internal calls are undocumented and out of scope for this project. |
+| API | No documented or accessible public API. |
 | Advanced security (penetration testing) | Beyond the scope of a manual QA portfolio project; would require explicit authorization from the system owner (Ministry of Interior), which has not been obtained. |
 | Reliability (network fault injection) | Non-functional (Reliability, ISO 25010). Noted as a candidate for a future dedicated non-functional/performance effort (see portfolio TODO, project 10) - not executed here. |
 | Portability (beyond the defined browser/device list) | Testing is limited to the browsers and devices actually available to the tester; no future-proofing or migration testing is planned. |
