@@ -118,6 +118,13 @@ Worth double-checking this on a fresh page load.
 
 ## Still to test / open items
 
+- [ ] Direct keyboard typing into the day/month/year fields (not just dropdown
+      selection) - the site appears to accept typed values too. All existing
+      test cases (1.2.1-1.2.9) only cover dropdown selection. Typing may
+      bypass the dropdown's built-in range (e.g. year 1906-2011) - test typed
+      values outside that range (e.g. a far-past year like 1800, a future
+      year like 2030), non-numeric typed input, and typed values for
+      day/month that don't exist in the dropdown at all.
 - [ ] Partial 00 combinations: day=00 + real month, real day + month=00
 - [ ] Submit with a year near/above 2011 boundary (e.g. 2010, 2011, 2012) and
       compare responses
