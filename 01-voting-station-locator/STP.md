@@ -53,7 +53,7 @@ eligibility and find their assigned polling station by submitting their ID numbe
 
 #### 2.1.1 Functional requirements to be tested
 
-Formalized in the [traceability matrix](https://docs.google.com/spreadsheets/d/1N10lbNpYWRBuHuPAgquC69JrYWB3VnxMGj2IGlV-TFM/edit?usp=sharing) (source of truth); step-by-step scripts live in `test-scripts.md`.
+These requirements are broken down into test conditions and test cases in the [traceability matrix](https://docs.google.com/spreadsheets/d/1N10lbNpYWRBuHuPAgquC69JrYWB3VnxMGj2IGlV-TFM/edit?usp=sharing); detailed step-by-step scripts live in `test-scripts.md`.
 
 | # | Requirement | Test conditions | # TCs | Notes |
 |---|---|---|---|---|
