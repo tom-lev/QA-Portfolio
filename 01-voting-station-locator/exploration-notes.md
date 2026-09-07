@@ -47,8 +47,7 @@ birth. So 00/00 as a valid day+month combination is very likely intentional,
 not a defect.
 Evidence: `evidence/bug02-day-month-00-selected.jpeg`,
 `evidence/bug02-invalid-date-generic-error.jpeg`
-Source: https://www.nevo.co.il/law_html/law00/72938.htm ,
-https://he.wikipedia.org/wiki/תאריך_לידה
+Source: https://he.wikipedia.org/wiki/תאריך_לידה#קביעת_תאריך_הלידה
 
 **Open question - not yet tested:** does the system accept *partial* 00
 combinations (day=00 with a real month, or a real day with month=00), or only
