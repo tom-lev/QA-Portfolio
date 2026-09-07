@@ -85,7 +85,7 @@ traceability matrix - they're tracked separately (test cases + results live in `
 | API | No documented or accessible public API. |
 | Advanced security (penetration testing) | Would require explicit authorization from the system owner. |
 | Reliability | Requires inducing failure and inspecting recovery at the infrastructure level - access the tester doesn't have on someone else's live production system. |
-| Portability (how easily the system could be moved to a different environment, e.g. a different OS or server, and how much effort/documentation that would take) | Properly testing this means actually migrating the system to a different environment, measuring how long it took and how much needed updating, then running sample functional and visual checks to confirm it still works correctly afterward. The tester has no access to the system's deployment or infrastructure - only to the public URL as an end user - so there's nothing to migrate and no way to perform this kind of test. |
+| Portability | Requires migrating the system between environments - the tester has no access to its deployment or infrastructure, only the public URL. |
 
 #### 2.1.5 Regression Testing
 
