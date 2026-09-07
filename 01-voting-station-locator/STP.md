@@ -35,8 +35,6 @@ lookup.
 The Voting Station Locator ("איתור קלפי") is a page on gov.il that lets a citizen check voter
 eligibility and find their assigned polling station by submitting their ID number and date of birth.
 
-- **Technology:** Angular SPA (Angular Material), protected by Cloudflare bot management. Raw HTML is
-  an empty shell (`<app-root>`) - all content renders client-side.
 - **Linked content:** the page also links to a secondary page, "reasons for exclusion from the voter
   roll" (לסיבות אי הכללות בפנקס), covered under UI/UX scope ([2.1.3](#213-test-types-to-be-tested)) and
   listed as an open item ([2.1.1](#211-functional-requirements-to-be-tested)).
