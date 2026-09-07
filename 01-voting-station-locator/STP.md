@@ -53,12 +53,10 @@ eligibility and find their assigned polling station by submitting their ID numbe
 
 #### 2.1.1 Functional requirements to be tested
 
-These requirements are broken down into test conditions and test cases in the [traceability matrix](https://docs.google.com/spreadsheets/d/1N10lbNpYWRBuHuPAgquC69JrYWB3VnxMGj2IGlV-TFM/edit?usp=sharing); detailed step-by-step scripts live in `test-scripts.md`.
-
-| # | Requirement | Test conditions | # TCs | Notes |
-|---|---|---|---|---|
-| 1 | **Data entry** (הזנת פרטים) - the ID and birth-date fields accept valid input without error, so the rest of the form can be filled in. | **1.1** ID number entry (הזנת תעודת זהות): valid 9-digit checksum, invalid checksum, wrong digit count (8/10), non-numeric characters, empty field.<br>**1.2** Birth date entry (הזנת תאריך לידה): valid real date, invalid day-in-month, leap-year date, leap-year boundary+1, non-leap-year boundary+1, full `00.00.0000`, and partial-unknown day/month/year combinations. | 1.1: 6<br>1.2: 9 | The `00.00.0000` and partial-`00` cases are included because `00` as day/month is a documented historical convention in Israel's population registry (see `exploration-notes.md`) - the test cases exist to establish how the system actually handles each variant. |
-| 2 | **Form submission & registry match** (שליחת הטופס ואיתור התאמה במרשם האוכלוסין) - submitting valid ID + birth date returns the correct eligibility/location result, or a correct ineligibility reason. | **2.1** Submission with valid, matching voter data (incl. an exact-match result screen, non-matching but valid-format data, an 18-on-election-day boundary case, and 18-the-day-after case).<br>**2.2** Submission for a registered citizen under voting age (correct ineligibility message).<br>**2.3** Rapid double-click on the submit button (single request only).<br>**2.4** Browser back button after a successful submission (form resets cleanly). | 2.1: 5<br>2.2: 1<br>2.3: 1<br>2.4: 1 | `2.1.1`, `2.1.2`, `2.1.4`, `2.1.5`, `2.2.1`, `2.3.1`, `2.4.1` each require a real, registered citizen's ID + birth date (the tester's own, where applicable) to produce an actual registry match - see the data-access constraint under [Risks](#6-risks--assumptions). |
+| # | Name | Description |
+|---|---|---|
+| 1 | Data entry (הזנת פרטים) | Entering an ID number and a birth date, so the rest of the form can be filled in. Covers ID field validation (digit count, checksum, format) and birth-date field validation (valid dates, invalid day-in-month combinations, leap-year edge cases, and the `00`-as-unknown-birthdate convention documented in Israel's population registry). |
+| 2 | Form submission & registry match (שליחת הטופס ואיתור התאמה במרשם האוכלוסין) | Submitting the form and receiving the correct result: an eligible, matching voter gets their polling station details; a registered citizen under voting age gets the correct ineligibility message; non-matching submissions are handled correctly; a rapid double-click sends a single request; the browser back button resets the form cleanly. |
 
 **Open items identified during exploration, not yet formalized as test cases** (see `exploration-notes.md`
 for full detail) - to be triaged into the traceability matrix before this plan's exit criteria are
@@ -123,7 +121,7 @@ fix cycle.
 | Exit criterion | Target |
 |---|---|
 | % of requirements covered by test cases | 100% |
-| % of planned test cases (23, per [2.1.1](#211-functional-requirements-to-be-tested)) executed | 100% of the test cases for which suitable test data can be obtained (see the data-access constraint under [Risks](#6-risks--assumptions)) |
+| % of planned test cases (23, see [Effort & Headcount Estimate](#33-effort--headcount-estimate)) executed | 100% of the test cases for which suitable test data can be obtained (see the data-access constraint under [Risks](#6-risks--assumptions)) |
 | % of executed test cases passed | 90% |
 | Test cases left unexecuted without a documented reason | 0 |
 | Bugs found written up in `bug-reports.md` with repro steps and evidence | 100% |
