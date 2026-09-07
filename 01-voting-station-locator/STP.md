@@ -68,10 +68,10 @@ eligibility and find their assigned polling station by submitting their ID numbe
 | Test type | Scope for this project | # Testers |
 |---|---|---|
 | Functional | Field validation, form submission, result display - see [2.1.1](#211-functional-requirements-to-be-tested). | 1 |
-| Compatibility (non-functional) | Leading desktop browsers (Chrome, Edge, Firefox, Safari, latest stable) and mobile/responsive layout, checked via browser DevTools device emulation and a personal smartphone. Not modeled in the functional traceability matrix - tracked separately (test cases + results live in `test-scripts.md` / `STR.md`). | 1 |
-| Accessibility / keyboard navigation (non-functional) | Keyboard-only navigation of the form, logical Tab order, field labels, focus handling. Same treatment as Compatibility above. | 1 |
-| Security - basic (non-functional) | Input sanitization / injection attempts in the ID field (e.g. script tags), HTTPS enforcement, and checking that error messages don't enable user enumeration. Same treatment as Compatibility above. | 1 |
-| UI/UX - general (non-functional) | On-page navigation/links (e.g. the "reasons for exclusion" link and its own links), clarity of error messages, visual consistency. Same treatment as Compatibility above. | 1 |
+| Compatibility | Leading desktop browsers (Chrome, Edge, Firefox, Safari, latest stable) and mobile/responsive layout, checked via browser DevTools device emulation and a personal smartphone. Not modeled in the functional traceability matrix - tracked separately (test cases + results live in `test-scripts.md` / `STR.md`). | 1 |
+| Accessibility / keyboard navigation | Keyboard-only navigation of the form, logical Tab order, field labels, focus handling. Same treatment as Compatibility above. | 1 |
+| Security - basic | Input sanitization / injection attempts in the ID field (e.g. script tags), HTTPS enforcement, and checking that error messages don't enable user enumeration. Same treatment as Compatibility above. | 1 |
+| UI/UX - general | On-page navigation/links (e.g. the "reasons for exclusion" link and its own links), clarity of error messages, visual consistency. Same treatment as Compatibility above. | 1 |
 
 #### 2.1.4 Test types NOT tested
 
