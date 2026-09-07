@@ -6,10 +6,6 @@
 |---|---|---|---|---|
 | 1.0.0 | Tomer Levin | _TBD_ | Self-review (solo portfolio project, no external approver) | _TBD_ |
 
-> This is a **plan**: it defines what will be tested and how. It intentionally contains no execution
-> results, pass/fail outcomes, or bug findings - those belong in `run-report.md`, `bug-reports.md`, and
-> `STR.md` once the round defined here is executed.
-
 ## Table of Contents
 
 1. [Introduction](#1-introduction)
