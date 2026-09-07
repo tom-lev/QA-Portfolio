@@ -84,7 +84,7 @@ traceability matrix - they're tracked separately (test cases + results live in `
 | Performance / Load | The SUT is a live production government system not owned by the tester - there is no authorization or safe way to generate artificial load against it. |
 | API | No documented or accessible public API. |
 | Advanced security (penetration testing) | Would require explicit authorization from the system owner. |
-| Reliability (network fault injection) | Non-functional (Reliability, ISO 25010). Noted as a candidate for a future dedicated non-functional/performance effort (see portfolio TODO, project 10) - not executed here. |
+| Reliability (maturity, fault tolerance, recovery, compliance with reliability standards such as an SLA) | Properly testing this means deliberately inducing failure - shutting down the machine, dropping the server, cutting communication - then bringing the system back up and checking whether it recovers as expected (correct screen, no data loss, backup mechanism). That requires infrastructure-level access and control the tester doesn't have on a live production government system owned by someone else, and inducing failure on it without authorization isn't something the tester can or should do. |
 | Portability (beyond the defined browser/device list) | Testing is limited to the browsers and devices actually available to the tester; no future-proofing or migration testing is planned. |
 
 #### 2.1.5 Regression Testing
