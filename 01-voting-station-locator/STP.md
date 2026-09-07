@@ -36,8 +36,7 @@ The Voting Station Locator ("איתור קלפי") is a page on gov.il that lets
 eligibility and find their assigned polling station by submitting their ID number and date of birth.
 
 - **Linked content:** the page also links to a secondary page, "reasons for exclusion from the voter
-  roll" (לסיבות אי הכללות בפנקס), covered under UI/UX scope ([2.1.3](#213-test-types-to-be-tested)) and
-  listed as an open item ([2.1.1](#211-functional-requirements-to-be-tested)).
+  roll" (לסיבות אי הכללות בפנקס), covered under UI/UX scope ([2.1.3](#213-test-types-to-be-tested)).
 - **Boundaries:** testing is limited to the public-facing eligibility-check + polling-station-lookup
   form and its immediate linked content. The SUT is a **live production government system not owned or
   controlled by the tester** - there is no server-side access, no ability to inspect or call an API
@@ -57,19 +56,6 @@ eligibility and find their assigned polling station by submitting their ID numbe
 |---|---|---|
 | 1 | Data entry (הזנת פרטים) | Entering an ID number and a birth date, the form's only two fields. Covers ID field validation (digit count, check digit, format) and birth-date field validation (valid dates, invalid day-in-month combinations, leap-year edge cases, and the `00`-as-unknown-birthdate convention historically used in Israel's population registry - documented at [Hebrew Wikipedia](https://he.wikipedia.org/wiki/תאריך_לידה#קביעת_תאריך_הלידה); see [`exploration-notes.md`](exploration-notes.md) for full detail). |
 | 2 | Form submission & registry match (שליחת הטופס ואיתור התאמה במרשם האוכלוסין) | Submitting the form and receiving the correct result: an eligible, matching voter gets their polling station details; a registered citizen under voting age gets the correct ineligibility message; non-matching submissions are handled correctly; a rapid double-click sends a single request; the browser back button resets the form cleanly. |
-
-**Open items identified during exploration, not yet formalized as test cases** (see
-[`exploration-notes.md`](exploration-notes.md) for full detail) - to be triaged into the traceability
-matrix before this plan's exit criteria are considered met:
-
-- Year-dropdown boundaries: submitting with birth year at/near 2011 (max selectable) and 1906 (min
-  selectable), to confirm behavior at the edges.
-- Whether the 1906 minimum year is computed dynamically (`current year - 120`) or hardcoded - cannot be
-  verified from the UI alone; would need re-checking after time passes, or a source-level answer.
-- Additional invalid-day-in-month cases beyond the one already scripted (day 31 in April) - e.g. day 31
-  in June, September, November.
-- Full content and navigation of the "reasons for exclusion from the voter roll" link/page (currently
-  covered only at a high level under UI/UX general, [2.1.3](#213-test-types-to-be-tested)).
 
 #### 2.1.2 Functional requirements NOT tested
 
