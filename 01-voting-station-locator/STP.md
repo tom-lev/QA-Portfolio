@@ -85,7 +85,7 @@ traceability matrix - they're tracked separately (test cases + results live in `
 | API | No documented or accessible public API. |
 | Advanced security (penetration testing) | Would require explicit authorization from the system owner. |
 | Reliability (maturity, fault tolerance, recovery, compliance with reliability standards such as an SLA) | Properly testing this means deliberately inducing failure - shutting down the machine, dropping the server, cutting communication - then bringing the system back up and checking whether it recovers as expected (correct screen, no data loss, backup mechanism). That requires infrastructure-level access and control the tester doesn't have on a live production government system owned by someone else, and inducing failure on it without authorization isn't something the tester can or should do. |
-| Portability (beyond the defined browser/device list) | Testing is limited to the browsers and devices actually available to the tester; no future-proofing or migration testing is planned. |
+| Portability (how easily the system could be moved to a different environment, e.g. a different OS or server, and how much effort/documentation that would take) | Properly testing this means actually migrating the system to a different environment, measuring how long it took and how much needed updating, then running sample functional and visual checks to confirm it still works correctly afterward. The tester has no access to the system's deployment or infrastructure - only to the public URL as an end user - so there's nothing to migrate and no way to perform this kind of test. |
 
 #### 2.1.5 Regression Testing
 
