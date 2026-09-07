@@ -1,4 +1,4 @@
-# Software Test Report (STR) — Voting Station Locator
+# Software Test Report (STR) - Voting Station Locator
 
 _TBD_
 

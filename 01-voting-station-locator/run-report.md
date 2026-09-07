@@ -1,6 +1,6 @@
-# Run Report — Voting Station Locator
+# Run Report - Voting Station Locator
 
-Execution log — one row per test case per run. Distinct from `STR.md` (the
+Execution log - one row per test case per run. Distinct from `STR.md` (the
 final summary report) and from `test-scripts.md`/the traceability matrix
 (planned test design, not execution history).
 
