@@ -61,8 +61,7 @@ eligibility and find their assigned polling station by submitting their ID numbe
 
 | # | Item | Reason |
 |---|---|---|
-| 1 | In-person voting at the physical polling station | Outside the boundary of the web system under test. |
-| 2 | Voter registry data accuracy (ground truth) | No access to the real voter roll to verify results against; only the tester's own fictitious or real test data can be checked. |
+| 1 | Voter registry data accuracy (ground truth) | No access to the real voter roll to verify results against; only the tester's own fictitious or real test data can be checked. |
 
 #### 2.1.3 Test types to be tested
 
