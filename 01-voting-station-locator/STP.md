@@ -55,7 +55,7 @@ eligibility and find their assigned polling station by submitting their ID numbe
 
 | # | Name | Description |
 |---|---|---|
-| 1 | Data entry (הזנת פרטים) | Entering an ID number and a birth date, so the rest of the form can be filled in. Covers ID field validation (digit count, checksum, format) and birth-date field validation (valid dates, invalid day-in-month combinations, leap-year edge cases, and the `00`-as-unknown-birthdate convention documented in Israel's population registry). |
+| 1 | Data entry (הזנת פרטים) | Entering an ID number and a birth date, the form's only two fields. Covers ID field validation (digit count, checksum, format) and birth-date field validation (valid dates, invalid day-in-month combinations, leap-year edge cases, and the `00`-as-unknown-birthdate convention documented in Israel's population registry). |
 | 2 | Form submission & registry match (שליחת הטופס ואיתור התאמה במרשם האוכלוסין) | Submitting the form and receiving the correct result: an eligible, matching voter gets their polling station details; a registered citizen under voting age gets the correct ineligibility message; non-matching submissions are handled correctly; a rapid double-click sends a single request; the browser back button resets the form cleanly. |
 
 **Open items identified during exploration, not yet formalized as test cases** (see `exploration-notes.md`
