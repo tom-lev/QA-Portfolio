@@ -37,9 +37,9 @@ eligibility and find their assigned polling station by submitting their ID numbe
 
 - **Technology:** Angular SPA (Angular Material), protected by Cloudflare bot management. Raw HTML is
   an empty shell (`<app-root>`) - all content renders client-side.
-- **Content shown on the page (at time of writing):** election date Tuesday 27/10/2026 (ט"ז בחשוון
-  התשפ"ז); voter roll snapshot date 31/05/2026, with a link to "reasons for exclusion from the voter
-  roll" (לסיבות אי הכללות בפנקס).
+- **Linked content:** the page also links to a secondary page, "reasons for exclusion from the voter
+  roll" (לסיבות אי הכללות בפנקס), covered under UI/UX scope ([2.1.3](#213-test-types-to-be-tested)) and
+  listed as an open item ([2.1.1](#211-functional-requirements-to-be-tested)).
 - **Boundaries:** testing is limited to the public-facing eligibility-check + polling-station-lookup
   form and its immediate linked content. The SUT is a **live production government system not owned or
   controlled by the tester** - there is no server-side access, no ability to inspect or call an API
