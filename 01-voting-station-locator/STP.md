@@ -190,8 +190,8 @@ scope per [2.1.4](#214-test-types-not-tested).
 | Activity | From | To | Duration (days) |
 |---|---|---|---|
 | Requirements / exploratory analysis | 26.09.2026 | 27.09.2026 | 2 |
-| Test round 1 (scripting + execution) | 29.09.2026 | 01.10.2026 | 3 |
-| Reporting (STR) | 02.10.2026 | 03.10.2026 | 2 |
+| Test round 1 (scripting + execution) | 28.09.2026 | 30.09.2026 | 3 |
+| Reporting (STR) | 01.10.2026 | 02.10.2026 | 2 |
 
 ## 5. Test Deliverables
 
@@ -199,10 +199,10 @@ scope per [2.1.4](#214-test-types-not-tested).
 |---|---|---|
 | `STP.md` | 27.09.2026 | 29.09.2026 |
 | Traceability matrix (Google Sheets) | 27.09.2026 | 29.09.2026 |
-| `test-scripts.md` | 01.10.2026 | 03.10.2026 |
-| `run-report.md` | 01.10.2026 | 03.10.2026 |
-| `bug-reports.md` | 01.10.2026 | 03.10.2026 |
-| `STR.md` | 03.10.2026 | 05.10.2026 |
+| `test-scripts.md` | 30.09.2026 | 02.10.2026 |
+| `run-report.md` | 30.09.2026 | 02.10.2026 |
+| `bug-reports.md` | 30.09.2026 | 02.10.2026 |
+| `STR.md` | 02.10.2026 | 04.10.2026 |
 
 ## 6. Risks & Assumptions
 
