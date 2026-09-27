@@ -110,7 +110,7 @@ fix cycle.
 | Exit criterion | Target |
 |---|---|
 | % of requirements covered by test cases | 100% |
-| % of planned test cases (30, see [Effort & Headcount Estimate](#33-effort--headcount-estimate)) executed | 100% of the test cases for which suitable test data can be obtained (see the data-access constraint under [Risks](#6-risks--assumptions)) |
+| % of planned test cases (per the traceability matrix) executed | 100% of the test cases for which suitable test data can be obtained (see the data-access constraint under [Risks](#6-risks--assumptions)) |
 | % of executed test cases passed | 90% |
 | Test cases left unexecuted without a documented reason | 0 |
 | Bugs found written up in `bug-reports.md` with repro steps and evidence | 100% |
@@ -183,7 +183,7 @@ scope per [2.1.4](#214-test-types-not-tested).
 | Activity | Size (# test cases) | Est. effort (hours) | # Testers |
 |---|---|---|---|
 | Requirements / exploratory analysis | _TBD_ | _TBD_ | 1 |
-| Test round 1 (scripting + execution) | 30 planned (22 for Req. 1, 8 for Req. 2) | _TBD_ | 1 |
+| Test round 1 (scripting + execution) | _TBD_ - to be sized once the traceability matrix is finalized | _TBD_ | 1 |
 
 ## 4. Schedule & Milestones
 
@@ -235,7 +235,7 @@ against. Found defects are written up directly in `bug-reports.md` as final deli
 
 | Metric | Description | Frequency | Target |
 |---|---|---|---|
-| Test case authoring progress | % of the 30 planned test cases scripted (in `test-scripts.md`) out of the full plan. | Per work session | 100% before execution begins |
+| Test case authoring progress | % of the planned test cases (per the traceability matrix) scripted (in `test-scripts.md`) out of the full plan. | Per work session | 100% before execution begins |
 | Test environment readiness | Site reachable, form loads, no Cloudflare block. | Start of each session | Ready before executing |
 | Requirements coverage | % of requirements covered by at least one test case. | Per work session | 100% |
-| Execution status (Passed/Failed/Blocked) | Count and % of the 30 planned test cases executed, split by outcome. | Per work session | 95%+ of non-Blocked cases executed by round end |
+| Execution status (Passed/Failed/Blocked) | Count and % of the planned test cases (per the traceability matrix) executed, split by outcome. | Per work session | 95%+ of non-Blocked cases executed by round end |
