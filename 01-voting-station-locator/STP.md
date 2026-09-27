@@ -4,7 +4,7 @@
 
 | Version | Author | Update Date | Reviewed by | Review Date |
 |---|---|---|---|---|
-| 1.0.0 | Tomer Levin | _TBD_ | Self-review (solo portfolio project, no external approver) | _TBD_ |
+| 1.0.0 | Tomer Levin | _TBD_ | Self-review (solo portfolio project, no external approver) | N/A |
 
 ## Table of Contents
 
@@ -197,12 +197,12 @@ scope per [2.1.4](#214-test-types-not-tested).
 
 | Deliverable | Planned submission date | Review date |
 |---|---|---|
-| `STP.md` | 27.09.2026 | 29.09.2026 |
-| Traceability matrix (Google Sheets) | 27.09.2026 | 29.09.2026 |
-| `test-scripts.md` | 30.09.2026 | 02.10.2026 |
-| `run-report.md` | 30.09.2026 | 02.10.2026 |
-| `bug-reports.md` | 30.09.2026 | 02.10.2026 |
-| `STR.md` | 02.10.2026 | 04.10.2026 |
+| `STP.md` | 27.09.2026 | N/A |
+| Traceability matrix (Google Sheets) | 27.09.2026 | N/A |
+| `test-scripts.md` | 30.09.2026 | N/A |
+| `run-report.md` | 30.09.2026 | N/A |
+| `bug-reports.md` | 30.09.2026 | N/A |
+| `STR.md` | 02.10.2026 | N/A |
 
 ## 6. Risks & Assumptions
 
