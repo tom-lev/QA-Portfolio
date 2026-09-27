@@ -189,20 +189,20 @@ scope per [2.1.4](#214-test-types-not-tested).
 
 | Activity | From | To | Duration (days) |
 |---|---|---|---|
-| Requirements / exploratory analysis | _TBD_ | _TBD_ | _TBD_ |
-| Test round 1 (scripting + execution) | _TBD_ | _TBD_ | _TBD_ |
-| Reporting (STR) | _TBD_ | _TBD_ | _TBD_ |
+| Requirements / exploratory analysis | 2026-08-25 | 2026-09-27 | 34 |
+| Test round 1 (scripting + execution) | 2026-09-29 | 2026-10-10 | 12 |
+| Reporting (STR) | 2026-10-11 | 2026-10-14 | 4 |
 
 ## 5. Test Deliverables
 
 | Deliverable | Planned submission date | Review date |
 |---|---|---|
-| `STP.md` | _TBD_ | _TBD_ |
-| Traceability matrix (Google Sheets) | _TBD_ | _TBD_ |
-| `test-scripts.md` | _TBD_ | _TBD_ |
-| `run-report.md` | _TBD_ | _TBD_ |
-| `bug-reports.md` | _TBD_ | _TBD_ |
-| `STR.md` | _TBD_ | _TBD_ |
+| `STP.md` | 2026-09-27 | 2026-09-29 |
+| Traceability matrix (Google Sheets) | 2026-09-27 | 2026-09-29 |
+| `test-scripts.md` | 2026-10-10 | 2026-10-12 |
+| `run-report.md` | 2026-10-10 | 2026-10-12 |
+| `bug-reports.md` | 2026-10-10 | 2026-10-12 |
+| `STR.md` | 2026-10-14 | 2026-10-16 |
 
 ## 6. Risks & Assumptions
 
