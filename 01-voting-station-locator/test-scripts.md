@@ -22,7 +22,7 @@ Risks for the full rationale.
 | 1.1.3 | Invalid 8-digit ID - 85822412 | Common preconditions | 1. Enter `85822412` in the ID field.<br>2. Do not submit yet - observe the field. | An inline error message is shown for the ID field. |
 | 1.1.4 | Invalid 10-digit ID - 8582241277 | Common preconditions | 1. Enter `8582241277` in the ID field.<br>2. Do not submit yet - observe the field. | An inline error message is shown for the ID field. |
 | 1.1.5 | Invalid ID with non-numeric characters - 85822412% | Common preconditions | 1. Enter `85822412%` in the ID field.<br>2. Do not submit yet - observe the field. | An inline error message is shown for the ID field. |
-| 1.1.6 | Empty ID field | Common preconditions | 1. Leave the ID field empty.<br>2. Attempt to submit the form. | An error/required-field indication is shown for the ID field; the form does not submit. |
+| 1.1.6 | Empty ID field | Common preconditions | 1. Leave the ID field empty.<br>2. Select a valid, existing birth date (e.g. `10.02.1994`) so only the ID field is empty.<br>3. Attempt to submit the form. | An error/required-field indication is shown for the ID field specifically; the form does not submit. |
 
 ## Requirement 1.2 - Birth date entry (selecting from the dropdown)
 
