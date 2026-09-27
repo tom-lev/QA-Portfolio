@@ -158,7 +158,7 @@ practice, since the tester cannot actually schedule fixes on this external syste
 ### 3.1 Test Environment
 
 Functional, compatibility, accessibility, and basic-security testing all share the same environment in
-this project (unlike a larger project, there's no separate performance/API/usability lab).
+this project.
 
 - **Client side:** personal computer with internet connection and browser(s) (Chrome, Edge, Firefox,
   Safari where available); a personal smartphone and/or browser DevTools device emulation for
