@@ -4,7 +4,7 @@
 
 | Version | Author | Update Date | Reviewed by | Review Date |
 |---|---|---|---|---|
-| 1.0.0 | Tomer Levin | _TBD_ | Self-review (solo portfolio project, no external approver) | N/A |
+| 1.0.0 | Tomer Levin | 27.09.2026 | Self-review (solo portfolio project, no external approver) | N/A |
 
 ## Table of Contents
 
