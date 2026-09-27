@@ -206,16 +206,23 @@ scope per [2.1.4](#214-test-types-not-tested).
 
 ## 6. Risks & Assumptions
 
+### General risks (anticipated for this type of system)
+
 | # | Risk / Assumption | Mitigation |
 |---|---|---|
-| 1 | The date dropdowns may allow selecting a day that doesn't exist in the selected month (e.g. day 31 with month 2), with no inline validation feedback. | Test `1.2.2` and the other invalid-day-in-month combinations systematically; if the behavior turns out to be a defect, document it fully in `bug-reports.md` with evidence. |
+| 1 | Cloudflare bot management may flag or block repeated/rapid manual testing sessions, since this is a public production system. | Pace testing manually across sessions; avoid any automation or rapid repeated submissions. |
+| 2 | Full eligibility/match scenarios require real personal data (the tester's own, or a real registered citizen's) to produce an actual registry match, which raises privacy-handling requirements for test data. | Real values are never recorded in this repo (code, docs, or screenshots) - only the test result is documented. Wherever a real match isn't required, fictitious ID numbers with a valid check digit are used instead (see [`exploration-notes.md`](exploration-notes.md) for the check-digit algorithm). |
+| 3 | Some edge-case scenarios (e.g. a citizen at a specific age boundary) may require the real registry data of a specific citizen the tester has no access to and cannot fabricate, since a genuine registry match is required. Such cases may turn out not to be executable this round. | If no suitable test data can be found for a given case, mark it Not Executed in `run-report.md` with the reason stated, rather than counting it against the pass-rate exit criterion (see [2.1.7](#217-exit-criteria---test-execution)). |
+| 4 | The live site is external production infrastructure outside the tester's control and may change (redesign, copy, validation logic) mid-round. | Record the date/screenshot evidence for every test case executed, so a mid-round change is visible and re-testable rather than silently invalidating prior results. |
+
+### Risks identified during exploratory testing (see [`exploration-notes.md`](exploration-notes.md))
+
+| # | Risk / Assumption | Mitigation |
+|---|---|---|
+| 1 | The date dropdowns may allow selecting a day that doesn't exist in the selected month (e.g. day 31 with month 2), with no inline validation feedback. | Design test cases to systematically check invalid day-in-month combinations; if confirmed as a defect, document it fully in `bug-reports.md` with evidence. |
 | 2 | The system may return the same generic error message regardless of whether the cause is a structurally invalid date or a valid-but-non-matching value, which would make results hard to diagnose. | Design test cases so each "no match" result can be cross-checked against a known-invalid vs. known-fictitious-but-valid input, to separate the two causes. |
-| 3 | Inline validation behavior may be inconsistent between fields (e.g. present for the ID field, absent for the date fields). | Verify explicitly as part of `1.1.*` and `1.2.*` execution; document as a UX consistency finding if confirmed. |
-| 4 | `00` as day and/or month is a historical convention used in Israel's population registry (~800,000 people registered with `00.00` before ~2011, per research in [`exploration-notes.md`](exploration-notes.md)), but it is not yet known how the system handles *partial* `00` combinations (`1.2.7`, `1.2.8`) vs. the full `00.00` pair. | Execute `1.2.6`-`1.2.9` and record the system's actual behavior for each variant. |
-| 5 | Cloudflare bot management may flag or block repeated/rapid manual testing sessions, since this is a public production system. | Pace testing manually across sessions; avoid any automation or rapid repeated submissions. |
-| 6 | Privacy: several test cases (`2.1.1`, `2.1.2`, `2.1.4`, `2.1.5`, `2.2.1`, `2.3.1`, `2.4.1`) require, or are best executed with, the tester's own real ID number and birth date, or a real registered citizen's data, to produce an actual registry match. | Real values are never recorded in this repo (code, docs, or screenshots) - only the test result is documented. All other test cases use fictitious ID numbers with a valid check digit that don't belong to real people (see [`exploration-notes.md`](exploration-notes.md) for the check-digit algorithm used). |
-| 7 | `2.1.4` (citizen turning 18 exactly on election day) requires the real ID of a registered minor, which the tester has no access to and cannot fabricate (a real registry match is required). It may not be executable this round. | If no suitable test data can be found, mark the test case as Not Executed in `run-report.md` with the reason stated, rather than counting it against the pass-rate exit criterion (see [2.1.7](#217-exit-criteria---test-execution)). |
-| 8 | The live site may change (redesign, copy, validation logic) mid-round, since it's production infrastructure outside the tester's control. | Record the date/screenshot evidence for every test case executed, so a mid-round change is visible and re-testable rather than silently invalidating prior results. |
+| 3 | Inline validation behavior appears inconsistent between fields (present for the ID field, absent for the date fields). | Verify explicitly during birth-date entry testing; document as a UX consistency finding if confirmed. |
+| 4 | `00` as day and/or month is a historical convention used in Israel's population registry (~800,000 people registered with `00.00` before ~2011), but it is not yet known how the system handles *partial* `00` combinations vs. the full `00.00` pair. | Design birth-date test cases to cover the full `00.00` case and each partial-`00` variant separately, and record the system's actual behavior for each. |
 
 ## 7. Monitoring & Control
 
