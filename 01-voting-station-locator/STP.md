@@ -189,7 +189,7 @@ scope per [2.1.4](#214-test-types-not-tested).
 
 | Activity | From | To | Duration (days) |
 |---|---|---|---|
-| Requirements / exploratory analysis | 2026-08-25 | 2026-09-27 | 34 |
+| Requirements / exploratory analysis | 2026-09-20 | 2026-09-27 | 7 |
 | Test round 1 (scripting + execution) | 2026-09-29 | 2026-10-10 | 12 |
 | Reporting (STR) | 2026-10-11 | 2026-10-14 | 4 |
 
