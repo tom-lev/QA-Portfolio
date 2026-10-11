@@ -59,6 +59,7 @@ def test_age_typical_value_is_valid():
 
 
 @pytest.mark.xfail(
+    strict=True,
     raises=ValueError,
     reason="BUG-01: age 13 is rejected, but the spec allows ages 13-120",
 )
@@ -99,6 +100,7 @@ def test_fee_regular_user_pays_full_price():
 
 
 @pytest.mark.xfail(
+    strict=True,
     raises=AssertionError,
     reason="BUG-02: the senior discount is applied from age 64 instead of 65",
 )
