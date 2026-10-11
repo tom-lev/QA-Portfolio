@@ -20,6 +20,7 @@ skills on real, publicly available systems.
 |---|---------|--------------|--------------------|--------|
 | 01 | [Voting Station Locator](01-voting-station-locator/) | Full manual test cycle on a government voting-station lookup tool | [gov.il - Voting Station Locator](https://www.gov.il/apps/moin/bocharim/) | In progress |
 | 02 | [JPetStore Login Automation](02-jpetstore-login-automation/) | Selenium (POM) automation suite for a login flow | [JPetStore demo](https://petstore.octoperf.com/) | Complete |
+| 03 | [pytest Fundamentals](03-pytest-fundamentals/) | pytest unit test suites with bug tracking and CI | Training modules with planted bugs | In progress |
 
 ## Skills demonstrated
 
@@ -34,6 +35,8 @@ Aggregated across all projects in this portfolio - updated as new projects are a
 - Cross-browser / responsive checks
 - Clear technical documentation
 - Test automation (Selenium, Page Object Model)
+- Unit testing with pytest (boundary values, negative tests, exception and float assertions)
+- CI with GitHub Actions
 
 ## Contact
 
