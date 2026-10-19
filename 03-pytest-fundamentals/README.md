@@ -12,6 +12,7 @@ The test design, bug analysis and documentation are my own.
 | Project | Focus | Bugs found |
 |---|---|---|
 | [Registration Form](registration-form/) | Boundary values, negative tests, `pytest.raises`, `pytest.approx` | 2 |
+| [Shopping Cart](shopping-cart/) | Fixtures, `conftest.py`, fixture scope and test isolation, `parametrize` with ids | 3 |
 
 ## Run all tests
 

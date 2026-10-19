@@ -36,6 +36,7 @@ Aggregated across all projects in this portfolio - updated as new projects are a
 - Clear technical documentation
 - Test automation (Selenium, Page Object Model)
 - Unit testing with pytest (boundary values, negative tests, exception and float assertions)
+- pytest fixtures, conftest.py and parametrized (data-driven) tests
 - CI with GitHub Actions
 
 ## Contact
