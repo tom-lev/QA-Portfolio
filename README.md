@@ -37,6 +37,8 @@ Aggregated across all projects in this portfolio - updated as new projects are a
 - Test automation (Selenium, Page Object Model)
 - Unit testing with pytest (boundary values, negative tests, exception and float assertions)
 - pytest fixtures, conftest.py and parametrized (data-driven) tests
+- Mocking external dependencies (unittest.mock, monkeypatch)
+- Test suite organization with pytest markers (smoke / regression) and xfail for known bugs
 - CI with GitHub Actions
 
 ## Contact

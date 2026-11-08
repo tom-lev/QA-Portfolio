@@ -13,13 +13,15 @@ The test design, bug analysis and documentation are my own.
 |---|---|---|
 | [Registration Form](registration-form/) | Boundary values, negative tests, `pytest.raises`, `pytest.approx` | 2 |
 | [Shopping Cart](shopping-cart/) | Fixtures, `conftest.py`, fixture scope and test isolation, `parametrize` with ids | 3 |
+| [Notification Service](notification-service/) | Mocking, `monkeypatch`, `tmp_path`, `capsys`, custom markers, `xfail` on single rows | 2 |
 
 ## Run all tests
 
 ```
 pip install -r requirements.txt
 pytest -v
+pytest -m smoke
 ```
 
 Requires Python 3.10+. Settings are in `pytest.ini` (`--strict-markers`,
-strict xfail).
+strict xfail, `smoke` and `regression` markers).
